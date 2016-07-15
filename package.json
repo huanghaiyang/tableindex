@@ -4,7 +4,8 @@
   "description": "将html表格中的单元格转换为带索引的数组元素",
   "main": "index.js",
   "scripts": {
-    "test": "istanbul cover node_modules/mocha/bin/_mocha -- --reporter spec --timeout 3000 ./test/test"
+    "test": "istanbul cover node_modules/mocha/bin/_mocha -- --reporter spec --timeout 3000 --compilers js:babel-core:register ./test/test",
+    "debug": "node-debug --web-port=8081 istanbul cover node_modules/mocha/bin/_mocha -- --reporter spec --timeout 3000 --compilers js:babel-core:register ./test/test"
   },
   "repository": {
     "type": "git",
@@ -21,9 +22,11 @@
   },
   "homepage": "https://github.com/huanghaiyang/tableindex#readme",
   "devDependencies": {
-    "jsdom": "^9.4.1",
+    "babel-core": "^6.5.2",
+    "chai": "^3.5.0",
     "istanbul": "^0.4.0",
-    "mocha": "^2.1.0",
+    "jsdom": "^9.4.1",
+    "mocha": "^2.5.3",
     "should": "^8.4.0"
   }
 }
