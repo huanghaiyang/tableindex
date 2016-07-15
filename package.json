@@ -1,0 +1,29 @@
+{
+  "name": "tableindex",
+  "version": "1.0.0",
+  "description": "将html表格中的单元格转换为带索引的数组元素",
+  "main": "index.js",
+  "scripts": {
+    "test": "istanbul cover node_modules/mocha/bin/_mocha -- --reporter spec --timeout 3000 ./test/test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/huanghaiyang/tableindex.git"
+  },
+  "keywords": [
+    "table",
+    "index"
+  ],
+  "author": "huanghaiyang",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/huanghaiyang/tableindex/issues"
+  },
+  "homepage": "https://github.com/huanghaiyang/tableindex#readme",
+  "devDependencies": {
+    "jsdom": "^9.4.1",
+    "istanbul": "^0.4.0",
+    "mocha": "^2.1.0",
+    "should": "^8.4.0"
+  }
+}
